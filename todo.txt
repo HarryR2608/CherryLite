@@ -1,0 +1,34 @@
+CPP:
+-Stop automatic printing when result is fetched from mongo - COMPLETED
+-Extract computation cycle to separate function - COMPLETED
+-Makefile cleans up object files - COMPLETED
+-Makefile is more dynamic (have variables for files to be compiled, dependency list etc) - COMPLETED
+-Check that priority respected, implement if not - COMPLETED
+-Order of submission is respected, secondary to priority - COMPLETED
+-Set grid_completed with seconds since 1970, January 1st, 00:00:00 - COMPLETED
+-Update to refer to "grids", not "jobs" - COMPLETED
+-Fix files, use folders - COMPLETED
+-Thread safe std::cout - Appears to already be thread safe, probably, if not just use mutex wrapper and compose message before dispatching - COMPLETED
+
+Frontend:
+-Single source of truth for what grid is, possibly remove 'grid' state - This was infact not a problem, state represents different info - COMPLETED
+-Deduplicate code in GridPage - COMPLETED
+-Ability to set priority of grids - COMPLETED
+-Ability to delete grids on HomePage - COMPLETED
+-Ability to create new grids on HomePage - COMPLETED
+-HomePage updates if one is waiting - COMPLETED
+-Set grid_added with seconds since 1970, January 1st, 00:00:00 - COMPLETED
+-Cannot edit grid when state is waiting or completed - COMPLETED
+-Fix all warnings/errors in debug console - COMPLETED
+-Use enums where applicapable, grid_status, grid_state - gridState is now a class enum - COMPLETED
+-Button to randomise the elements of the grid - COMPLETED
+-Break GridPage into smaller components - COMPLETED
+-Update to refer to "grids", not "jobs" - COMPLETED
+-Handle status "calculating" and "fetched" - COMPLETED
+
+-Everything:
+-Entire project called "CherryLite", consistency between mongo, git, filesystem - COMPLETED
+-Rename grid_added to grid_submitted - COMPLETED
+
+Git:
+-Fix commit history - COMPLETED
