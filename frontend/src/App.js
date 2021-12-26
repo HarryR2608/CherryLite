@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import HomePage from "./components/HomePage";
-import GridPage from "./components/GridPage";
+import HomePage from "./components/HomePage/HomePage";
+import GridPage from "./components/GridPage/GridPage";
 
 function App() {
   return (
@@ -19,11 +19,6 @@ function App() {
               <li className="navbar-item">
                 <Link to="/" className="nav-link">
                   Home
-                </Link>
-              </li>
-              <li className="navbar-item">
-                <Link to="/grid" className="nav-link">
-                  Grid
                 </Link>
               </li>
             </ul>

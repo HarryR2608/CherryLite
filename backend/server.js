@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use("/grid", gridRoutes);
 
-mongoose.connect("mongodb://127.0.0.1:27017/grid-memoisation", {
+mongoose.connect("mongodb://127.0.0.1:27017/CherryLite", {
   useNewUrlParser: true,
 });
 const connection = mongoose.connection;

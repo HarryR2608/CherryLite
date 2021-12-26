@@ -2,7 +2,7 @@
 const Schema = mongoose.Schema;
 
 let Grid = new Schema({
-  grid_added: {
+  grid_submitted: {
     type: String,
   },
   grid_completed: {
