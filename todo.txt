@@ -28,7 +28,7 @@ Frontend:
 
 -Everything:
 -Entire project called "CherryLite", consistency between mongo, git, filesystem - COMPLETED
--Rename grid_added to grid_submitted - INPROGRESS
+-Rename grid_added to grid_submitted - COMPLETED
 
 Git:
--Fix commit history
+-Fix commit history - INPROGRESS
