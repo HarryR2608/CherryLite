@@ -15,7 +15,7 @@ function GridPage() {
   const [priority, setPriority] = useState("medium");
   const [gridInfo, setGridInfo] = useState({
     _id: "",
-    grid_added: "",
+    grid_submitted: "",
     grid_completed: "",
     grid_priority: "",
     grid_status: "",
@@ -155,7 +155,7 @@ function GridPage() {
   function updateGridInfo(data) {
     setGridInfo({
       _id: data._id,
-      grid_added: data.grid_added,
+      grid_submitted: data.grid_submitted,
       grid_completed: data.grid_completed,
       grid_priority: data.grid_priority,
       grid_status: data.grid_status,
@@ -221,7 +221,7 @@ function GridPage() {
     } else if (gridState === GridState.Saved) {
       let update = {};
       update["grid_status"] = "waiting";
-      update["grid_added"] = Math.floor(new Date().getTime() / 1000).toString();
+      update["grid_submitted"] = Math.floor(new Date().getTime() / 1000).toString();
       const res = await UpdateGrid(gridInfo._id, update);
       updateGridInfo(res);
     }
@@ -251,7 +251,7 @@ function GridPage() {
     let update = {};
     update["grid_status"] = "editing";
     update["grid_grid"] = "0-0_0-0";
-    update["grid_added"] = "";
+    update["grid_submitted"] = "";
     update["grid_completed"] = "";
     update["grid_solution"] = "";
     update["grid_priority"] = "medium";
